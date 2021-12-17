@@ -1,0 +1,17 @@
+TODO List ------
+
+- Implement and test Multithreading using Threading class
+- Make sure the image object is synchronised between webcam.py and Recognize.py
+- Implement DB to store Face IDs and link them to Names of people
+- FaceID TTL on Azure is limted -- For longer term storage, fetch all face parameters and store them in DB
+- 
+
+Good to Haves ------
+
+- Implement A UI for initial parameters
+- Lighter face detection?
+
+
+PROGRAM FLOW --
+
+https://lucid.app/lucidchart/invitations/accept/inv_30538e02-57fe-4161-a96e-7f611ea25bf8?viewport_loc=196%2C-177%2C2048%2C1163%2C0_0

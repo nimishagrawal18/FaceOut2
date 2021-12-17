@@ -1,0 +1,49 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>392c3cfd-0192-4d87-baba-c9efe7466723</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Recognize.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>FaceOutPy2</Name>
+    <RootNamespace>FaceOutPy2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FaceOutPy2.py" />
+    <Compile Include="globals.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SendToDB.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RunAll.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Recognize.py" />
+    <Compile Include="webcam.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TO-DO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

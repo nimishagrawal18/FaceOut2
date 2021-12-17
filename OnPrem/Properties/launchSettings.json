@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "OnPrem": {
+      "commandName": "Project"
+    }
+  }
+}
